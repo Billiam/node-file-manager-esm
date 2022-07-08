@@ -45,11 +45,11 @@ let defaultFileFilter = (
     'jpg | jpeg | heic | heif | png | ps |' +  // pixel images
     'svg | ai | ' + // vector images
     'avi | mp4 | mpg | wav | flac | m4a | aac | mpeg | mov ' // media formats
-).replaceAll(' ', '');
+).replace(/ /g, '');
 
 let defaultMimeFilter = (
     'video/* | audio/* | image/* '  // mime types, important to mobile phones (android)
-).replaceAll(' ', '');
+).replace(/ /g, '');
 
 
 (async _ => {
